@@ -54,3 +54,9 @@ nav {
         margin-top: 20rem;
     }
 }
+
+.membros {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-around;
+}
