@@ -1,1 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
+header {
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    img {
+        height: 100px;
+        width: 100%px;
+        margin-left: 80px;
+    }
+}
+
+nav {
+    display: flex;
+    gap: 70px;
+    margin-right: 200px;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+
+    }
+}
+
+.comeco {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+
+    .foto {
+        position: absolute;
+        z-index: 1;
+
+        img {
+            height: 900px;
+            width: 100%;
+        }
+    }
+
+    .texto {
+        z-index: 2;
+        color: #fff;
+        max-width: 600px;
+        background: rgba(0, 0, 0, 0.575);
+        text-align: center;
+        margin-top: 20rem;
+    }
+}
