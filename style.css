@@ -11,7 +11,7 @@ header {
 
     img {
         height: 100px;
-        width: 100px; /* corrigido */
+        width: 100px;
         margin-left: 80px;
     }
 }
@@ -33,7 +33,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh; /* ocupa a tela */
+    min-height: 90vh;
     text-align: center;
 
     background-image: url("imagens/foto1.jpg");
@@ -52,47 +52,124 @@ nav {
 }
 
 .membros {
-  max-width: 1000px;
-  margin: auto;
+    max-width: 1000px;
+    margin: auto;
 
- h2 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 20px;
+    h2 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .card p {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .juliano {
+        background-image: url(imagens/JULIANO.jpg);
+        height: 605px;
+        border-radius: 10px;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+    }
 }
 
-.cards {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+.historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: rgb(0, 0, 0);
+
+    p {
+        color: #fff;
+    }
+
+    h2 {
+        color: #ffffff;
+    }
 }
 
-.card {
-  flex: 1;
-  min-width: 300px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  
-}
-
-.card p {
-  margin-top: 10px;
-  font-size: 15px;
-  line-height: 1.4;
-}
-.juliano{
-    background-image: url(imagens/JULIANO.jpg);
-    height: 605px;
+.linha-do-tempo {
+    color: rgb(51, 49, 49);
+    padding: 40px;
+    max-width: 700px;
     border-radius: 10px;
-    width: 100%;
-    object-fit: cover;
-    background-size: cover;
-}
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.699);
+    font-family: sans-serif;
+    text-align: justify;
+    background-color: #ffffff5c;
+
 }
 
+.albuns h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+text-align: center;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 80px;
+}
+
+.album {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: rgba(0, 0, 0, 0.478) 0px 5px 15px;
+    ;
+}
+
+.album img {
+    width: 120px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.album h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.album p {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.album ul {
+    list-style: disc inside;
+    color: #fff;
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
 
